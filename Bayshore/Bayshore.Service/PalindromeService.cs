@@ -7,7 +7,8 @@ namespace Bayshore.Service
     {
         public bool IsPallindrome<T>(T n) where T : struct
         {
-            if (n is long num)
+            // the shortest way to make sure T is a number. Could also do a series of type checks
+            if (double.TryParse(n.ToString(), out var num))
             {
                 if (num < 0) throw new ArgumentException("Number must be positive");
 

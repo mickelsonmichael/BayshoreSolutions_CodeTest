@@ -14,5 +14,19 @@ namespace Bayshore.Service.Test
         {
             Assert.Throws<ArgumentException>(() => Service.IsPallindrome(n));
         }
+
+        [Fact]
+        public void IsPallindrome_WhenNotANumber_ThrowArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Service.IsPallindrome(true));
+        }
+
+        [Fact]
+        public void IsPallindrome_WhenNumber_ReturnsValue()
+        {
+            var result =  Service.IsPallindrome(1);
+
+            Assert.IsType<bool>(result);
+        }
     }
 }
