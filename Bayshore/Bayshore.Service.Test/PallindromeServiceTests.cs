@@ -30,10 +30,17 @@ namespace Bayshore.Service.Test
         }
 
         [Theory]
-        [InlineData(121), InlineData(1221), InlineData(1234321), InlineData(123321)]
+        [InlineData(121), InlineData(1221), InlineData(1234321), InlineData(123321), InlineData(1)]
         public void IsPallindrome_WhenIsPallindrome_ReturnsTrue(int n)
         {
             Assert.True(Service.IsPallindrome(n));
+        }
+
+        [Theory]
+        [InlineData(123), InlineData(1232), InlineData(123456)]
+        public void IsPallindrome_WhenIsNotPallindrome_ReturnsFalse(int n)
+        {
+            Assert.False(Service.IsPallindrome(n));
         }
     }
 }
