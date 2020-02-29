@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayshore", "Bayshore\Bayshore.csproj", "{AE78A81F-482C-4FD6-92F2-74C4F37FD2D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayshore.Service", "Bayshore.Service\Bayshore.Service.csproj", "{EBDDDD88-661B-4028-8CB4-4744B22E91D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE78A81F-482C-4FD6-92F2-74C4F37FD2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE78A81F-482C-4FD6-92F2-74C4F37FD2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE78A81F-482C-4FD6-92F2-74C4F37FD2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE78A81F-482C-4FD6-92F2-74C4F37FD2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDDDD88-661B-4028-8CB4-4744B22E91D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDDDD88-661B-4028-8CB4-4744B22E91D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDDDD88-661B-4028-8CB4-4744B22E91D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDDDD88-661B-4028-8CB4-4744B22E91D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2FC3948-0D21-45E4-8687-C6B8855EDD88}
+	EndGlobalSection
+EndGlobal
