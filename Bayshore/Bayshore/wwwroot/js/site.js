@@ -1,4 +1,28 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const message = $("#message");
 
-// Write your JavaScript code.
+$("#number").on("input", function () {
+    let $this = $(this);
+
+    let url = $this.data("url");
+    let number = $this.val();
+
+    // if nothing input, return to waiting
+    if (!number) {
+        message.removeClass("alert-danger alert-success")
+            .addClass("alert-info")
+            .text(message.data("default"));
+    }
+
+    $.post(url, { number: number }, function (result) {
+        if (result) {
+            message.removeClass("alert-danger alert-info")
+                .addClass("alert-success")
+                .text("Yes! It is a palindrome!");
+        }
+        else {
+            message.removeClass("alert-success alert-info")
+                .addClass("alert-danger")
+                .text("No! Not a palindrome!");
+        }
+    });
+});

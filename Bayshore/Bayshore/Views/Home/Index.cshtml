@@ -11,14 +11,17 @@
         </p>
         <div class="card">
             <div class="card-body">
-                <form asp-action="CheckPallindrome">
-                    <label for="number">Number</label>
-                    <input type="number" min="1" max="@long.MaxValue" name="number" class="form-control" />
-                    <br />
-                    <button type="submit" class="btn btn-primary">
-                        Check
-                    </button>
-                </form>
+                <label for="number">Number</label>
+                <input type="number" min="1" max="@long.MaxValue" 
+                       id="number" 
+                       name="number" 
+                       class="form-control"
+                       data-url="@Url.Action("CheckPalindrome")" />
+
+                <hr />
+                <div id="message" class="alert alert-info" data-default="Waiting for Number...">
+                    Waiting for Number...
+                </div>
             </div>
         </div>
     </div>

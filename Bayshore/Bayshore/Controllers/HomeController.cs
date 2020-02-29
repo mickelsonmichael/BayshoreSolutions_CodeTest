@@ -7,7 +7,7 @@ namespace Bayshore.Controllers
     {
         public IActionResult Index() => View();
 
-        public bool CheckPallindrome(long number, [FromServices] IPalindromeService palindromeService)
+        public bool CheckPalindrome(long number, [FromServices] IPalindromeService palindromeService)
         {
             return palindromeService.IsPallindrome(number);
         }
