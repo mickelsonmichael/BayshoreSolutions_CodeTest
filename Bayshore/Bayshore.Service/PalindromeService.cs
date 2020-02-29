@@ -16,6 +16,9 @@ namespace Bayshore.Service
                 var halfIndex = str.Length / 2;
 
                 var firstHalf = str.Substring(0, halfIndex).ToCharArray();
+
+                if (str.Length % 2 != 0) halfIndex++;
+
                 var secondHalf = str.Substring(halfIndex).ToCharArray();
 
                 Array.Reverse(secondHalf);
