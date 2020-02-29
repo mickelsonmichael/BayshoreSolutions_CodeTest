@@ -13,20 +13,30 @@ namespace Bayshore.Service
                 if (num < 0) throw new ArgumentException("Number must be positive");
 
                 var str = n.ToString();
-                var halfIndex = str.Length / 2;
 
-                var firstHalf = str.Substring(0, halfIndex).ToCharArray();
+                if (str.Length == 1) return true;
 
-                if (str.Length % 2 != 0) halfIndex++;
+                var (front, back) = GetHalves(str);
 
-                var secondHalf = str.Substring(halfIndex).ToCharArray();
-
-                Array.Reverse(secondHalf);
-
-                return firstHalf.SequenceEqual(secondHalf);
+                return front.SequenceEqual(back);
             }
 
             throw new ArgumentException("Number must be castable to a long", nameof(n));
         }
+
+        private (char[] front, char[] back) GetHalves(string str)
+        {
+            var halfIndex = str.Length / 2;
+            var firstHalf = str.Substring(0, halfIndex).ToCharArray();
+
+            if (str.Length % 2 != 0) halfIndex++;
+
+            var secondHalf = str.Substring(halfIndex).ToCharArray();
+
+            Array.Reverse(secondHalf);
+
+            return (firstHalf, secondHalf);
+        }
     }
+
 }
