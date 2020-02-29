@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayshore", "Bayshore\Baysho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayshore.Service", "Bayshore.Service\Bayshore.Service.csproj", "{EBDDDD88-661B-4028-8CB4-4744B22E91D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayshore.Service.Test", "Bayshore.Service.Test\Bayshore.Service.Test.csproj", "{EC67C9F4-4FAC-4998-A926-EE410A6C86A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EBDDDD88-661B-4028-8CB4-4744B22E91D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBDDDD88-661B-4028-8CB4-4744B22E91D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBDDDD88-661B-4028-8CB4-4744B22E91D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC67C9F4-4FAC-4998-A926-EE410A6C86A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC67C9F4-4FAC-4998-A926-EE410A6C86A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC67C9F4-4FAC-4998-A926-EE410A6C86A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC67C9F4-4FAC-4998-A926-EE410A6C86A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
