@@ -1,8 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Michael Mickelson - Pallindrome Checker";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+    <div class="col-sm-4 offset-sm-4">
+        <h1>Michael Mickelson</h1>
+        <p class="text-muted">
+            Please implement a function that checks whether a positive number is a palindrome or not. For
+            example, 121 is a palindrome, but 123 is not.
+        </p>
+        <div class="card">
+            <div class="card-body">
+                <form asp-action="CheckPallindrome">
+                    <label for="number">Number</label>
+                    <input type="number" min="1" max="@long.MaxValue" name="number" class="form-control" />
+                    <br />
+                    <button type="submit" class="btn btn-primary">
+                        Check
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
